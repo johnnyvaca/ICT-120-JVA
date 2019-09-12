@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e74d5fd-e260-4263-bb7a-2b7afdb11909" name="Default Changelist" comment="" />
+    <list default="true" id="45431460-6fd4-4805-b64e-ac67b95bdee0" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,22 +13,14 @@
       <executable />
     </execution>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
-  <component name="ProjectId" id="1PxraP7UrLjrirPjDwc0XkqWi5Q" />
+  <component name="ProjectId" id="1QjxdhggZXopc1ik7SPH6j2WAr4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/tools/php73/php.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -42,24 +34,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="ICT-120" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="8080">
-      <method v="2" />
-    </configuration>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9e74d5fd-e260-4263-bb7a-2b7afdb11909" name="Default Changelist" comment="" />
-      <created>1566826651674</created>
+      <changelist id="45431460-6fd4-4805-b64e-ac67b95bdee0" name="Default Changelist" comment="" />
+      <created>1568297896017</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1566826651674</updated>
-      <workItem from="1566826653650" duration="1284000" />
-      <workItem from="1566998040957" duration="271000" />
-      <workItem from="1568297942737" duration="684000" />
+      <updated>1568297896017</updated>
+      <workItem from="1568297897933" duration="43000" />
     </task>
     <servers />
   </component>
@@ -71,9 +56,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
