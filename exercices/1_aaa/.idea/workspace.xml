@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e74d5fd-e260-4263-bb7a-2b7afdb11909" name="Default Changelist" comment="" />
+    <list default="true" id="eec43f10-d194-4a59-aa7e-352e84e74d4d" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,20 +16,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
-  <component name="ProjectId" id="1PxraP7UrLjrirPjDwc0XkqWi5Q" />
+  <component name="ProjectId" id="1RYXczgtOc3JBMtMN6XFAgrRRlR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/exercices/1_aaa" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="last_opened_file_path" value="C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git/Git Bash.lnk" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -43,30 +44,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="ICT-120" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="8080">
-      <method v="2" />
-    </configuration>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9e74d5fd-e260-4263-bb7a-2b7afdb11909" name="Default Changelist" comment="" />
-      <created>1566826651674</created>
+      <changelist id="eec43f10-d194-4a59-aa7e-352e84e74d4d" name="Default Changelist" comment="" />
+      <created>1569845086786</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1566826651674</updated>
-      <workItem from="1566826653650" duration="1284000" />
-      <workItem from="1566998040957" duration="271000" />
-      <workItem from="1568297942737" duration="684000" />
-      <workItem from="1569239841470" duration="5867000" />
-      <workItem from="1569247212136" duration="2000" />
-      <workItem from="1569505559978" duration="3787000" />
-      <workItem from="1569565088489" duration="196000" />
-      <workItem from="1569565436468" duration="1306000" />
-      <workItem from="1569844383616" duration="698000" />
+      <updated>1569845086786</updated>
+      <workItem from="1569845087943" duration="6467000" />
+      <workItem from="1570189014017" duration="4308000" />
+      <workItem from="1570439874525" duration="302000" />
+      <workItem from="1570448023467" duration="8258000" />
     </task>
     <servers />
   </component>
