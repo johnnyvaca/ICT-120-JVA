@@ -1,0 +1,10 @@
+java -version
+
+
+cd desktop
+
+
+java -jar keygen.jar
+
+
+eJzzzU/OLi0odstPdypNr6pxS8xJzs/Ly6yoMTIysDQwNjIwMKhxNgSSAEFQDaM=
