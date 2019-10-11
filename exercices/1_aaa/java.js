@@ -3,7 +3,8 @@ div12 = document.getElementById("div2")
 div13 = document.getElementById("div3")
 div14 = document.getElementById("div4")
 div15 = document.getElementById("div5")
-
+div16 = document.getElementById("txtNames")
+div17 = document.getElementById("txtInitialss")
 function div01()
 {
     div11.style.backgroundColor = "lightblue";
@@ -27,26 +28,15 @@ function div04()
 }
 function bigywas(){
     if (chbox1.checked === true  && chbox2.checked=== true){
-        var content="YES";
 
-        exo4.innerHTML=content; //totalité de l'élément = content
+
+        exo4.innerHTML="YES"; //totalité de l'élément = content
         exo4.classList.add("color");
 
 
     }
 
 }
-function detruire()
-{
-    cible.classList.add("block");
-    cible.innerHTML = null;
-}
-function initials(nom)
-{
-   nom = name.value.substring(0,1);
-}
-
-
 div11.addEventListener("click",div01);
 div12.addEventListener("click",div02);
 div13.addEventListener("mouseover",div03);
@@ -54,6 +44,29 @@ div13.addEventListener("mouseout",div04);
 chbox1.addEventListener("click",bigywas);
 chbox2.addEventListener("click",bigywas);
 balle.addEventListener("click",detruire);
+
+function detruire()
+{
+    cible.classList.add("block");
+
+}
+function initials()
+{
+alert("hello");
+    lettre1 = div16.value.substring(0,1);
+    position2 = div16.value.lastIndexOf(" ")+1;
+
+    lettre2 = div16.value.substring(position2,position2+1);
+    position3 = div16.value.length - 1;
+    lettre3 = div16.value.substring(position3,position3+1);
+
+    div17.value = (lettre1+lettre2+lettre3);
+    div16.value = div16.value.toUpperCase();
+
+}
+
+div16.addEventListener("keyup",initials());
+
 
 
 
