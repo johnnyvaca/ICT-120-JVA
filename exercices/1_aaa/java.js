@@ -50,27 +50,62 @@ function detruire()
     cible.classList.add("block");
 
 }
-function initials()
-{
-alert("hello");
-    lettre1 = div16.value.substring(0,1);
-    position2 = div16.value.lastIndexOf(" ")+1;
+function initials() {
 
-    lettre2 = div16.value.substring(position2,position2+1);
-    position3 = div16.value.length - 1;
-    lettre3 = div16.value.substring(position3,position3+1);
 
-    div17.value = (lettre1+lettre2+lettre3);
-    div16.value = div16.value.toUpperCase();
+    lettre1 = div16.value.substring(0, 1);
+    position2 = div16.value.lastIndexOf(" ") + 1;
+    lettre2 = div16.value.substring(position2, position2 + 1);
+
+    position3 = div16.value.length;
+    lettre3 = div16.value.substring(position3 - 1, position3);
+
+    div17.value = (lettre1 + lettre2 + lettre3);
+    acronime = div17.value;
+    div17.value = div17.value.toUpperCase();
+    //  console.log(position3 + " =  " + lettre3+  "<br>");
+
 
 }
 
-div16.addEventListener("keyup",initials());
+div16.addEventListener("keyup",initials);
+etape = 0;
+marque.disabled = false;
+pret.disabled = true;
+partez.style.visibility = "hidden";
+function marques() {
 
+    if (etape === 0) {
+        marque.disabled = true;
+        pret.disabled = false;
+        partez.style.visibility = "visible";
+        partez.disabled = true;
+        etape++;
+    }
+}
+function prets() {
 
+    if (etape === 1) {
+        marque.style.visibility = "hidden";
+        pret.disabled = true;
+        partez.style.visibility = "visible";
+        partez.disabled = false;
+        etape++;
+    }
+}
+function partezs() {
 
+    if (etape === 2) {
+        marque.style.visibility = "hidden";
+        pret.style.visibility = "hidden";
+        partez.disabled = true;
+images.imageSrcset("",document);
+    }
+}
 
-
+partez.addEventListener("click", partezs);
+marque.addEventListener("click", marques);
+pret.addEventListener("click", prets);
 
 //element.classList();
 /*

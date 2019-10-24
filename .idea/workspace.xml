@@ -28,7 +28,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/exercices/1_aaa" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RunDashboard">
@@ -67,6 +67,10 @@
       <workItem from="1569565088489" duration="196000" />
       <workItem from="1569565436468" duration="1306000" />
       <workItem from="1569844383616" duration="698000" />
+      <workItem from="1571341644404" duration="3518000" />
+      <workItem from="1571434745156" duration="697000" />
+      <workItem from="1571495674898" duration="4458000" />
+      <workItem from="1571751301785" duration="6277000" />
     </task>
     <servers />
   </component>
