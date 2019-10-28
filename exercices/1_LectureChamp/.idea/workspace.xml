@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eec43f10-d194-4a59-aa7e-352e84e74d4d" name="Default Changelist" comment="" />
+    <list default="true" id="e817b712-a70b-4117-ac58-eecb940dc759" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,24 +13,15 @@
       <executable />
     </execution>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
-  <component name="ProjectId" id="1RYXczgtOc3JBMtMN6XFAgrRRlR" />
+  <component name="ProjectId" id="1Spj5quparBx8URw5wY7nU3sWZj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../1_aaa" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -49,19 +40,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="eec43f10-d194-4a59-aa7e-352e84e74d4d" name="Default Changelist" comment="" />
-      <created>1569845086786</created>
+      <changelist id="e817b712-a70b-4117-ac58-eecb940dc759" name="Default Changelist" comment="" />
+      <created>1572267250393</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1569845086786</updated>
-      <workItem from="1569845087943" duration="6467000" />
-      <workItem from="1570189014017" duration="4308000" />
-      <workItem from="1570439874525" duration="302000" />
-      <workItem from="1570448023467" duration="8258000" />
-      <workItem from="1570712045698" duration="1232000" />
-      <workItem from="1570793721403" duration="5076000" />
-      <workItem from="1572267126781" duration="123000" />
-      <workItem from="1572267571062" duration="789000" />
+      <updated>1572267250393</updated>
+      <workItem from="1572267251485" duration="3202000" />
     </task>
     <servers />
   </component>
@@ -73,9 +57,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
