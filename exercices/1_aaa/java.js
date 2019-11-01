@@ -5,6 +5,10 @@ div14 = document.getElementById("div4")
 div15 = document.getElementById("div5")
 div16 = document.getElementById("txtNames")
 div17 = document.getElementById("txtInitialss")
+
+
+
+
 function div01()
 {
     div11.style.backgroundColor = "lightblue";
@@ -69,39 +73,46 @@ function initials() {
 }
 
 div16.addEventListener("keyup",initials);
-etape = 0;
-marque.disabled = false;
-pret.disabled = true;
-partez.style.visibility = "hidden";
-function marques() {
+function vide()
+{
+    marque.disabled = false;
+    marque.style.visibility = "visible";
+    pret.style.visibility = "visible";
+    pret.disabled = true;
+    partez.style.visibility = "hidden";
+    images.setAttribute("src","empty.png");
 
-    if (etape === 0) {
+}
+
+function marques() {
         marque.disabled = true;
         pret.disabled = false;
         partez.style.visibility = "visible";
         partez.disabled = true;
-        etape++;
-    }
+        images.setAttribute("src","marks.png");
 }
 function prets() {
 
-    if (etape === 1) {
+
         marque.style.visibility = "hidden";
         pret.disabled = true;
         partez.style.visibility = "visible";
         partez.disabled = false;
-        etape++;
-    }
+        autre.
+    images.setAttribute("src","set.png");
+
+
 }
 function partezs() {
 
-    if (etape === 2) {
         marque.style.visibility = "hidden";
         pret.style.visibility = "hidden";
         partez.disabled = true;
-images.imageSrcset("",document);
-    }
+    images.setAttribute("src","go.png");
+        setTimeout(vide, 3000);
+
 }
+
 
 partez.addEventListener("click", partezs);
 marque.addEventListener("click", marques);

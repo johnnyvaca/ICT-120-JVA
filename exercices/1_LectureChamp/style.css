@@ -1,0 +1,13 @@
+a {
+    color: green;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+}
+
+#zone2 {
+    height: 200px;
+    width: 200px;
+}
