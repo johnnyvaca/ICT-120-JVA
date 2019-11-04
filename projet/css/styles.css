@@ -1,44 +1,45 @@
-body{
+body {
     height: 100px;
     margin: 0px;
 }
-#couverture{
-   background: url("../images/couverture2.jpg") 50% 50%no-repeat;
+
+#couverture {
+    background: url("../images/couverture2.jpg") 50% 50%no-repeat;
     align-content: center;
     height: 768px;
     border: none;
     background-size: cover;
     position: relative;
 }
-a{
+
+a {
     color: azure;
     text-decoration: none;
 }
-button{
+
+button {
     background: #0f6674;
 }
-.menuPage{
 
-
+.menuPage {
     text-align: center;
     position: absolute;
     margin-left: 37%;
     bottom: 0;
 }
-a{
 
+a {
     color: black;
     text-decoration: black;
 }
-.divBody{
 
+.divBody {}
 
-}
- .divBody > h1{
-     background: #ff2121;
+.divBody>h1 {
+    background: #ff2121;
     text-align: center;
 }
- select{
 
-     height: 200px;
- }
+select {
+    height: 200px;
+}
