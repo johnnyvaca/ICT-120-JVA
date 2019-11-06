@@ -53,3 +53,18 @@ select {
     height: 40%;
     background: green;
 }
+
+td{
+
+width: 150px;
+
+}
+#notes{
+
+    width: 300px;
+}
+
+#accronime{
+
+    width: 50px;
+}
