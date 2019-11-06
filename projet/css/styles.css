@@ -1,9 +1,10 @@
 body {
-    height: 100px;
+    height: 1500px;
     margin: 0px;
 }
 
 #couverture {
+    background: yellow;
     background: url("../images/couverture2.jpg") 50% 50%no-repeat;
     align-content: center;
     height: 768px;
@@ -22,6 +23,7 @@ button {
 }
 
 .menuPage {
+    background: yellow;
     text-align: center;
     position: absolute;
     margin-left: 37%;
@@ -33,13 +35,21 @@ a {
     text-decoration: black;
 }
 
-.divBody {}
+.divBody {
+    color: #ff2121;
+    background: rgb(20, 209, 61);
+}
 
-.divBody>h1 {
+h1 {
     background: #ff2121;
     text-align: center;
 }
 
 select {
-    height: 200px;
+    height: 50px;
+}
+
+.menu {
+    height: 40%;
+    background: green;
 }
