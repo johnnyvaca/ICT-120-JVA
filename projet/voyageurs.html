@@ -14,7 +14,9 @@
 </head>
 
 <body>
-    <div id="couverture" class="container-fluid h-125">
+
+
+<div id="couverture" class="container-fluid h-125">
 
 
 
@@ -22,7 +24,7 @@
             <ul class="nav justify-content-center mw-100 ">
 
                 <li class="nav-item">
-                    <button><a class="nav-link active" href="index.html" style=" color: #000"><b>Transports</b></a> </button>
+                    <a class="nav-link active" href="index.html" style=" color: #000"><b>Transports</b></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Participants</a>
@@ -40,15 +42,18 @@
     </div>
     <h1 class="h1">MODIFIER VOYAGEURS</h1>
 
-    <select>
+    <select id="selectV">
         <option selected>Choisissez votre voyage</option>
+
       
     </select>
 
     <a href="transports.html">Transports</a>
     <a href="voyageurs.html">Voyageurs</a>
-<button>Ajouter</button> 
-<button>Supprimer</button> 
+
+
+<button id="addP">Ajouter</button>
+<button id="deleteP">Supprimer</button>
 
         <table>
         <thead>
@@ -64,18 +69,18 @@
             </tr>
 
         </thead>
-        <tbody>
+        <tbody id="lVoyageurs">
             
             <tr>
-                <td><input type="text" name="nom" placeholder="nom" id="txtNom"></td>
-                <td><input type="text" name="prenom" placeholder="prenom" id="txtPrenom"></td>
+                <td><input type="text" name="nom" placeholder="nom" id="1"></td>
+                <td><input type="text" name="prenom" placeholder="prenom" id="2"></td>
            <!--     <td><input type="text" name="accronime" placeholder="accronime"  id="accronime"></td> -->
-                <td id="notes"><input type="text" name="notes" placeholder="notes" id="txtNotes"></td>
-                <td><input type="text" name="siege" placeholder="siège" id="txtSiege"></td>
-                <td><input type="text" name="typeId" placeholder="type d'identité" id="txtTypeId"></td>
-                <td><input type="text" name="NumId" placeholder="numero d'identité" id="txtNumId"></td>
-                <td> <button id="cmdPlus">+</button> </td>
-                <td> <button id="cmdMoin">-</button> </td>
+                <td id="notes"><input type="text" name="notes" placeholder="notes" id="3"></td>
+                <td><input type="text" name="siege" placeholder="siège" id="4"></td>
+                <td><input type="text" name="typeId" placeholder="type d'identité" id="5"></td>
+                <td><input type="text" name="NumId" placeholder="numero d'identité" id="6"></td>
+      <!--          <td> <button id="cmdPlus">+</button> </td>
+                <td> <button id="cmdMoin">-</button> </td>   -->
             </tr>
 
         </tbody>
@@ -83,7 +88,7 @@
 
     </table>
 
-    <script src="javaJS.js"></script>
+
 
 </body>
 

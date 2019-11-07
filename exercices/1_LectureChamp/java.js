@@ -35,8 +35,8 @@ function myselect() {
 
     console.log(lettre);
     console.log(sO);
-    console.log('${lettre}');
-    imagess.setAttribute("src", lettre);
+    console.log('${lettre}');imagess.setAttribute("src", lettre);
+
 
 }
 select1.addEventListener("change", myselect);
@@ -62,6 +62,8 @@ for (i = vMin2; i <= vMax2; i++) {
     opt.innerHTML = i;
     select.appendChild(opt);
 }
+
+
 
 function zoneText() {
     var miI = document.getElementById("sMin").selectedIndex;

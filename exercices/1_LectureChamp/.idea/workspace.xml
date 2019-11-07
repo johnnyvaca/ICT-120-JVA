@@ -20,7 +20,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../1_aaa" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RunDashboard">
@@ -47,6 +47,7 @@
       <updated>1572267250393</updated>
       <workItem from="1572267251485" duration="4000000" />
       <workItem from="1572881494269" duration="638000" />
+      <workItem from="1573075519474" duration="4232000" />
     </task>
     <servers />
   </component>

@@ -20,6 +20,8 @@ a {
 
 button {
     background: #0f6674;
+    width: 50px;
+    height: 30px;
 }
 
 .menuPage {
@@ -45,9 +47,7 @@ h1 {
     text-align: center;
 }
 
-select {
-    height: 50px;
-}
+
 
 .menu {
     height: 40%;
@@ -67,4 +67,9 @@ width: 150px;
 #accronime{
 
     width: 50px;
+}
+
+input{
+
+
 }
