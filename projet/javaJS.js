@@ -28,56 +28,58 @@ function  url() {
 return extraction;
 }
 
+
+function killLine(event) // Le paramètre event représente l'événement qui a causé l'appel à la fonction
+{
+    cmdMoin = event.target   // La cible ('target') de l'événement est le bouton (un élément du DOM)
+    td = button.parentNode  // td est la cellule dans laquelle le bouton se trouve
+    tr = td.parentNode      // tr est la ligne ('row') dans laquelle la cellule se trouve
+    tbody = tr.parentNode   // table est la table dans laquelle la ligne se trouve
+    tbody.removeChild(tr)   // On enlève la ligne de la table
+}
+
+
 	
 	function enregistrer() {
 
 		longeurTr = document.getElementById('lVoyageurs').rows[0].cells.length;
 		newtr = document.createElement('tr')
 
-			for(i = 0; i < longeurTr; i++)
+			for(i = 0; i < longeurTr+2; i++)
 			{
-				newId = document.createElement('td');
-				newInput = document.createElement('input');
-				newInput.type = "text";
-				newId.appendChild(newInput);
-				newtr.appendChild(newId);
+				if(i < longeurTr){
+					newtD = document.createElement('td');
+					newInput = document.createElement('input');
+					newInput.type = "text";
+					
+					
+					newtD.appendChild(newInput);
+				newtr.appendChild(newtD);
+					
+				}else{
+					newBouton = document.createElement('button');
+					if(i%2 === 0)
+					{
+						newBouton.addEventListener("click",enregistrer)
+					}
+					else{
+						newBouton.addEventListener("")
+					}
+						
+						
+						
+						newtr.appendChild(newBouton);
+						
+
+				}
+				
+				
+
 
 			}
 		lVoyageurs.appendChild(newtr)
 	
 
-/*
-		var rows = document.getElementById('lVoyageurs').rows;
-		
-		for (var i = 0; i < 1; i++) { // rows.length
-			var row = rows[i];
-			for (var j = 0; j < 1 ; j++) { //row.cells.length
-				var input = document.createElement('input');
-				input.type = "text";
-				row.cells[i].appendChild(input); //
-			};
-		}; 
-
-
-	*/	
-		
-
-
-		/*
-				var parent = document.getElementById('lVoyageurs');
-				var lignes = document.getElementById('lVoyageurs').rows;
-				var Ldonne = document.getElementById('lVoyageurs').rows[0].cells.length;
-				var fils = document.getElementById('lignes');
-				//var Ldonnee = document.getElementById('lVoyageurs').rows[i].cells.length;
-				console.log(rows);
-				for (i = 0; i < Ldonne; i++)
-				{
-					var input = document.createElement('input');
-					input.setAttribute("placeholder", "nom "+i);
-					fils.appendChild(input);
-				}
-				fils.appendChild(input);
-		*/
 }
 
 
