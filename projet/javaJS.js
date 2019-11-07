@@ -1,8 +1,10 @@
 document.addEventListener('DOMContentLoaded', init)
 function init(){
 
-
-
+	 rows = document.getElementById('lVoyageurs').rows;
+	console.log(rows);
+	 datas = document.getElementById('lVoyageurs').rows[0].cells.length
+	console.log(datas);
 
 	 Url = url();
 	 if(Url === "voyageurs.html"){
@@ -12,14 +14,14 @@ function init(){
 
 
 	 }
-
+	var rowss = document.getElementById('lVoyageurs');
+	console.log(rowss);
 
 }
 
 function  url() {
 	vUrls = location.pathname;
 	position = vUrls.lastIndexOf("/")+1;
-
 	extraction = vUrls.substring(position,vUrls.length)
 	console.log(extraction);
 
@@ -27,22 +29,43 @@ return extraction;
 }
 
 
+i = 0;
+	function enregistrer() {
 
-function enregistrer() {
 
-	vVoyageurs = document.getElementById('lVoyageurs');
 
-	var rows = document.getElementById('lVoyageurs').rows;
+
+	var rows = document.getElementById('lVoyageurs').rows[0].cells.length;
+	console.log(rows);
+
+	for (var k = i; k < i+1; k++) {
+
+		for (var p = 0; p < rows; p++){
+			var input = document.createElement('input');
+			input.setAttribute("placeholder", "nom");
+
+		}
+
+
+
+	}
+
+
+	/*
+	var newL = document.createElement("tr");
+	newL.value= "hello";
+	newL.innerText = "hallo";
+	newL.appendChild(vVoyageurs);
+*/
+	/*
 	for (var k = 0; k < 1; k++) {
 
 		var row = rows[k];
+//		rows[]
 
 	//	cmdPlus.style.visibility = "visibled";
-		for (var j = 0; j < row.cells.length; j++) {
+		for (var j = 0; j < 10; j++) {
 			if (j < row.cells.length ) {
-
-
-
 
 				var input = document.createElement('input');
 				input.type = "text";
@@ -81,7 +104,7 @@ function enregistrer() {
 		}
 		;
 	}
-	;
+	;*/
 }
 
 
