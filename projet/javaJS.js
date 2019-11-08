@@ -41,16 +41,18 @@ function etatDelete() {
     val = ajouter();
     // line = lVoyageurs.rows[0].cells[5].children;
    // alert(line);
-    line2 = lVoyageurs.children[0].children[0].children[0];
+    line2 = lVoyageurs.children[0].children[0].children[0].innerText;
   //  donnees = line.children;
-    console.log("line : " + val);
-    for (i = 0; i < val.rows.length; i++) {
-
-        lVoyageurs.children[i].children[4].children[i].style.visibility = "visible";
-        lVoyageurs.children[i].children[4].children[i].value = "hello";
-        lVoyageurs.children[i].children[4].children[i].innerHTML = "hello";
-        lVoyageurs.children[i].children[4].children[i].innertext = "hello";
-        console.log("longeur : "+ i +"\n");
+    console.log("line : " + val.rows);
+    console.log("");
+    for (i = 0; i < 4; i++) {
+/*
+        lVoyageurs.children[i].children[5].children[i].style.visibility = "visible";
+        lVoyageurs.children[i].children[5].children[i].value = "hello";
+        lVoyageurs.children[i].children[5].children[i].innerHTML = "hello";
+        lVoyageurs.children[i].children[5].children[i].innertext = "hello";
+*/
+        console.log("longeur : "+ line2 +"\n");
 
 
 
