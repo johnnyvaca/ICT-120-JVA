@@ -157,6 +157,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="dummy://restClient/response5.html" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectId" id="1T8vsicuP2C2O8FKV8RISezxaYn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
@@ -167,6 +170,40 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\marwa\Documents\Github\ICT-120-JVA\projet" />
     </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:63342" />
+          <option name="urlPath" value="/projet/voyageurs.html" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="_ijt" />
+                <option name="value" value="ffd30m1jc9q36n1l4ebjp8klbr" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -196,6 +233,7 @@
       <workItem from="1573072344759" duration="16607000" />
       <workItem from="1573117036581" duration="6974000" />
       <workItem from="1573126824544" duration="2696000" />
+      <workItem from="1573172657223" duration="7287000" />
     </task>
     <servers />
   </component>

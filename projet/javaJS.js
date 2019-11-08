@@ -26,47 +26,6 @@ function init() {
 
 }
 
-function etatDelete() {
-    deleteP.disabled = true;
-    addP.disabled = false;
-
-
-    saveAjouter = ajouter()
-    console.log(saveAjouter);
-
-    var t = document.getElementById(saveAjouter), // This have to be the ID of your table, not the tag
-
-
-
-
-        longeurTd = document.getElementById('lVoyageurs').rows[0].cells.length;
-
-    longeurTr = document.getElementById('lVoyageurs').rows.length;
-    lignes = document.getElementById('lVoyageurs').rows;
-    dernierTr = longeurTr - 1;
-    dernierTd = longeurTd;
-    selectionDelete = document.getElementById('lVoyageurs').rows[dernierTr].cells[dernierTd];
-
-    var t = document.getElementById("lVoyageurs")
-    for (i = 0; i < longeurTr; i++) {
-
-        //  lignes[i].cells[dernierTd].style.visibility = "visibled"
-        saveAjouter.rows.cells[5].style.visibility = "visible";
-
-        //    var d = t.getElementsByTagName("tr")[i]
-        //    var rs = d.getElementsByTagName("td")[5];
-
-        //     rs.value = "hello1";
-        //     rs.innerText = "hello2";
-        //     console.log("RS  :  " + rs);
-
-    }
-    selectionDelete.Value = "-";
-    selectionDelete.innerText = "-";
-
-
-}
-
 function url() {
     vUrls = location.pathname;
     position = vUrls.lastIndexOf("/") + 1;
@@ -75,6 +34,35 @@ function url() {
 
     return extraction;
 }
+
+function etatDelete() {
+    deleteP.disabled = true;
+    addP.disabled = false;
+    val = ajouter();
+    // line = lVoyageurs.rows[0].cells[5].children;
+   // alert(line);
+    line2 = lVoyageurs.children[0].children[0].children[0];
+  //  donnees = line.children;
+    console.log("line : " + val);
+    for (i = 0; i < val.rows.length; i++) {
+
+        lVoyageurs.children[i].children[4].children[i].style.visibility = "visible";
+        lVoyageurs.children[i].children[4].children[i].value = "hello";
+        lVoyageurs.children[i].children[4].children[i].innerHTML = "hello";
+        lVoyageurs.children[i].children[4].children[i].innertext = "hello";
+        console.log("longeur : "+ i +"\n");
+
+
+
+
+
+    }
+
+
+
+}
+
+
 
 
 function killLine(event) // Le paramètre event représente l'événement qui a causé l'appel à la fonction
@@ -104,7 +92,7 @@ function ajouter() {
     }
 
 
-    console.log(longeurTr + " espace    tdLentg" + dernierTd);
+//    console.log(longeurTr + " espace    tdLentg" + dernierTd);
     newtr = document.createElement('tr')
 
     for (i = 0; i < longeurTd + 1; i++) {
@@ -135,7 +123,7 @@ function ajouter() {
             newBouton.value = "+"
             newBouton.innerText = "+"
             newBouton.addEventListener("click", ajouter)
-            console.log("bouton\n")
+      //      console.log("bouton\n")
             newtd.appendChild(newBouton);
 
 
