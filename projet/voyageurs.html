@@ -16,7 +16,7 @@
 <body>
 
 
-<div id="couverture" class="container-fluid h-125">
+    <div id="couverture" class="container-fluid h-125">
 
 
 
@@ -52,17 +52,17 @@
     <a href="voyageurs.html">Voyageurs</a>
 
 
-<button id="addP">Ajouter</button>
-<button id="deleteP">Supprimer</button>
+    <button id="addP">+</button>
+    <button id="deleteP">-</button>
 
-        <table>
+    <table>
         <thead>
             <tr id="lignes">
                 <td>nom</td>
                 <td>prenom</td>
-       <!--         <td>Acronimes</td> -->
-                <td id="notes">Notes</td>
-                <td>Place</td>
+                <!--         <td>Acronimes</td> -->
+                <td class="notes">Remarques</td>
+                <!--      <td>Place</td> -->
                 <td>Type pce id</td>
                 <td>Num pce id</td>
 
@@ -70,16 +70,16 @@
 
         </thead>
         <tbody id="lVoyageurs">
-            
+
             <tr>
                 <td><input type="text" name="nom" placeholder="nom" id="1"></td>
                 <td><input type="text" name="prenom" placeholder="prenom" id="2"></td>
-           <!--     <td><input type="text" name="accronime" placeholder="accronime"  id="accronime"></td> -->
-                <td id="notes"><input type="text" name="notes" placeholder="notes" id="3"></td>
-                <td><input type="text" name="siege" placeholder="siège" id="4"></td>
+                <!--     <td><input type="text" name="accronime" placeholder="accronime"  id="accronime"></td> -->
+                <td class="notes"><input type="text" name="notes" placeholder="notes" class="notes" id="3"></td>
+                <!--       <td><input type="text" name="siege" placeholder="siège" id="4"></td> -->
                 <td><input type="text" name="typeId" placeholder="type d'identité" id="5"></td>
                 <td><input type="text" name="NumId" placeholder="numero d'identité" id="6"></td>
-      <!--          <td> <button id="cmdPlus">+</button> </td>
+                <!--          <td> <button id="cmdPlus">+</button> </td>
                 <td> <button id="cmdMoin">-</button> </td>   -->
             </tr>
 

@@ -47,29 +47,21 @@ h1 {
     text-align: center;
 }
 
-
-
 .menu {
     height: 40%;
     background: green;
 }
 
-td{
-
-width: 150px;
-
+td,
+select {
+    width: 210px;
+    height: 30px;
 }
-#notes{
 
+.notes {
     width: 300px;
 }
 
-#accronime{
-
+#accronime {
     width: 50px;
-}
-
-input{
-
-
 }
