@@ -10,7 +10,7 @@ function init() {
     rows = document.getElementById('lVoyageurs').rows;
     console.log(rows);
     datas = document.getElementById('lVoyageurs').rows[0].cells.length
-        //	console.log(datas);
+    //	console.log(datas);
 
     Url = url();
     if (Url === "voyageurs.html") {
@@ -35,10 +35,10 @@ function url() {
     return extraction;
 }
 
-function etatDelete() {
+function etatDelete(event) {
     deleteP.disabled = true;
     addP.disabled = false;
-    val = ajouter();
+   // val = ajouter();
 
     longeurTd = document.getElementById('lVoyageurs').rows[0].cells.length;
     oTR = document.getElementById('lVoyageurs').rows;
@@ -47,153 +47,96 @@ function etatDelete() {
     dernierTd = longeurTd;
     selectionDelete = document.getElementById('lVoyageurs').rows[dernierTr].cells[5];
 
+    for (i = 1; i < longeurTr + 1; i++) {
+    oTD = oTR[i].getElementsByTagName('td');
+    console.log("longeur : " + longeurTr);
 
 
-    for (i = 0; i < longeurTd + 1; i++) {
-    }
-
-  //  if (longeurTr !== 0) {
-        //document.getElementById('lVoyageurs')
-    //    lVoyageurs.rows[i].cells[5].children[i].style.visibility = "visible";
-     //   selectionDelete.style.visibility = "visible";
-   // }
-   console.log("longeur : "+ longeurTr);
-
-    for(i=1;i<longeurTr+1;i++){
-        
-        oTD = oTR[i].getElementsByTagName('td');
         oTD[5].style.visibility = "visible";
         oBTN = oTD[5].getElementsByTagName('button');
-        oBTN[0].innerText = "-";
-        oBTN[0].value = "-";
-        oBTN[0].addEventListener("click",killLine);
-      
+        oBTN = event.target;
+        oBTN.innerText = "-";
+        oBTN.value = "-";
+        oBTN.addEventListener("click", killLine(oBTN[0],i));
 
+
+    }
+}
+    function killLine(event,i) // Le paramètre event représente l'événement qui a causé l'appel à la fonction
+    {
+        addP.disabled = false;
+        deleteP.disabled = true;
+
+
+        selectionDelete = document.getElementById('lVoyageurs').rows[i].cells[5].children[0];
+
+        selectionDelete = event.target // La cible ('target') de l'événement est le bouton (un élément du DOM)
+        btn = selectionDelete.parentNode // td est la cellule dans laquelle le bouton se trouve
+        td = btn.parentNode // tr est la ligne ('row') dans laquelle la cellule se trouve
+        tr = td.parentNode
+        tbody = tr.parentNode // table est la table dans laquelle la ligne se trouve
+        tbody.removeChild(tr) // On enlève la ligne de la table
     }
 
 
+    function ajouter() {
 
-/*        if (i === 3) {
-            newtd = document.createElement('td');
-            newSelect = document.createElement('select');
-            newOption = document.createElement('option');
-            newOption.value = "hello"
-            newOption.innerText = "Type pièce d'identité"
-            newSelect.appendChild(newOption)
-            newtd.appendChild(newSelect)
-            newtr.appendChild(newtd);
-        } else if (i < longeurTd) {
-            newtd = document.createElement('td');
-            newInput = document.createElement('input');
-            newInput.type = "text";
-            newtd.appendChild(newInput);
+        addP.disabled = true;
+        deleteP.disabled = false;
+    //    longeurTd = document.getElementById('lVoyageurs').rows[0].cells.length;
 
-            console.log("input\n")
+        longeurTr = document.getElementById('lVoyageurs').rows.length;
+        dernierTr = longeurTr - 1;
+        dernierTd = document.getElementById('lVoyageurs').rows[0].cells.length;
+        selectionDelete = document.getElementById('lVoyageurs').rows[dernierTr].cells[dernierTd];
 
-            newtr.appendChild(newtd);
+        if (longeurTr !== 1) {
+            selectionDelete.style.visibility = "hidden";
         }
-
-
-        if (i === longeurTd) {
-            newtd = document.createElement('td');
-            newBouton = document.createElement('button');
-            newBouton.value = "+"
-            newBouton.innerText = "+"
-            newBouton.addEventListener("click", ajouter)
-      //      console.log("bouton\n")
-            newtd.appendChild(newBouton);
-
-
-        }
-*/
-
-
-   
-
-
-}
-
-
-
-
-function killLine(event) // Le paramètre event représente l'événement qui a causé l'appel à la fonction
-{
-    longeurTd = document.getElementById('lVoyageurs').rows[0].cells.length;
-
-    longeurTr = document.getElementById('lVoyageurs').rows.length;
-    dernierTr = longeurTr - 1;
-    dernierTd = longeurTd;
-    selectionDelete = document.getElementById('lVoyageurs').rows[dernierTr].cells[dernierTd];
-    
-    cmdMoin = event.target // La cible ('target') de l'événement est le bouton (un élément du DOM)
-    btn = cmdMoin.parentNode // td est la cellule dans laquelle le bouton se trouve
-    td = btn.parentNode // tr est la ligne ('row') dans laquelle la cellule se trouve
-    tr = td.parentNode
-    tbody = tr.parentNode // table est la table dans laquelle la ligne se trouve
-    tbody.removeChild(tr) // On enlève la ligne de la table
-}
-
-
-
-function ajouter() {
-
-    addP.disabled = true;
-    deleteP.disabled = false;
-    longeurTd = document.getElementById('lVoyageurs').rows[0].cells.length;
-
-    longeurTr = document.getElementById('lVoyageurs').rows.length;
-    dernierTr = longeurTr - 1;
-    dernierTd = longeurTd;
-    selectionDelete = document.getElementById('lVoyageurs').rows[dernierTr].cells[dernierTd];
-
-    if (longeurTr !== 1) {
-        selectionDelete.style.visibility = "hidden";
-    }
 
 
 //    console.log(longeurTr + " espace    tdLentg" + dernierTd);
-    newtr = document.createElement('tr')
+        newtr = document.createElement('tr')
 
-    for (i = 0; i < longeurTd + 1; i++) {
-        if (i === 3) {
-            newtd = document.createElement('td');
-            newSelect = document.createElement('select');
-            newOption = document.createElement('option');
-            newOption.value = "hello"
-            newOption.innerText = "Type pièce d'identité"
-            newSelect.appendChild(newOption)
-            newtd.appendChild(newSelect)
-            newtr.appendChild(newtd);
-        } else if (i < longeurTd) {
-            newtd = document.createElement('td');
-            newInput = document.createElement('input');
-            newInput.type = "text";
-            newtd.appendChild(newInput);
+        for (i = 0; i < 5 + 1; i++) {
+            if (i === 3) {
+                newtd = document.createElement('td');
+                newSelect = document.createElement('select');
+                newOption = document.createElement('option');
+                newOption.value = "hello"
+                newOption.innerText = "Type pièce d'identité"
+                newSelect.appendChild(newOption)
+                newtd.appendChild(newSelect)
+                newtr.appendChild(newtd);
+            } else if (i < 5) {
+                newtd = document.createElement('td');
+                newInput = document.createElement('input');
+                newInput.type = "text";
+                newtd.appendChild(newInput);
 
-            console.log("input\n")
+                console.log("input\n")
 
-            newtr.appendChild(newtd);
+                newtr.appendChild(newtd);
+            }
+
+
+            if (i === 5) {
+                newtd = document.createElement('td');
+                newBouton = document.createElement('button');
+                newBouton.value = "+"
+                newBouton.innerText = "+"
+                newBouton.addEventListener("click", ajouter)
+                //      console.log("bouton\n")
+                newtd.appendChild(newBouton);
+
+
+            }
+
+
         }
+        newtr.appendChild(newtd);
+        lVoyageurs.appendChild(newtr);
 
 
-        if (i === longeurTd) {
-            newtd = document.createElement('td');
-            newBouton = document.createElement('button');
-            newBouton.value = "+"
-            newBouton.innerText = "+"
-            newBouton.addEventListener("click", ajouter)
-      //      console.log("bouton\n")
-            newtd.appendChild(newBouton);
-
-
-        }
-
-
-
+        //  return document.getElementById('lVoyageurs')
     }
-    newtr.appendChild(newtd);
-    lVoyageurs.appendChild(newtr)
-
-
-    return document.getElementById('lVoyageurs')
-}
