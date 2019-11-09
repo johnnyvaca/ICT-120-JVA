@@ -157,14 +157,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response5.html" root0="SKIP_INSPECTION" />
-  </component>
   <component name="ProjectId" id="1T8vsicuP2C2O8FKV8RISezxaYn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../exercices/1_LectureChamp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ICT-120-MSS/PageVoyage" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -234,6 +231,8 @@
       <workItem from="1573117036581" duration="6974000" />
       <workItem from="1573126824544" duration="2696000" />
       <workItem from="1573172657223" duration="13921000" />
+      <workItem from="1573326645129" duration="1917000" />
+      <workItem from="1573329394098" duration="10144000" />
     </task>
     <servers />
   </component>

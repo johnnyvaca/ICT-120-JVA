@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', init)
+var test = 0;
 
 function init() {
 
@@ -14,7 +15,7 @@ function init() {
 
     Url = url();
     if (Url === "voyageurs.html") {
-        addP.addEventListener('click', ajouter);
+        addP.addEventListener('click', etatAdd);
         deleteP.addEventListener('click', etatDelete);
         selectV.style.visibility = "hidden";
     } else {
@@ -34,35 +35,100 @@ function url() {
 
     return extraction;
 }
-
-function etatDelete() {
-    deleteP.disabled = true;
-    addP.disabled = false;
-    // val = ajouter();
-
-    longeurTd = document.getElementById('lVoyageurs').rows[0].cells.length;
+function test2(){
     oTR = document.getElementById('lVoyageurs').rows;
-    longeurTr = document.getElementById('lVoyageurs').rows.length;
-    dernierTr = longeurTr - 1;
-    dernierTd = longeurTd;
-    selectionDelete = document.getElementById('lVoyageurs').rows[dernierTr].cells[5];
+    for (i = 1; i < longeurTr; i++) {
+        oTD = oTR[i].getElementsByTagName('td');
 
-    for (i = 1; i < longeurTr + 1; i++) {
-        oTRR = oTR[i].getElementsByTagName('td');
-        oTR = oTRR[i];
-        console.log("longeur : " + longeurTr);
+        // console.log("longeur : " + longeurTr);
 
-        oTDD = oTD[5].getElementsByTagName('button');
-        oTD[5].style.visibility = "visible";
-
-        oBTN = oTDD[5];
-        oBTN[0] = event.target;
-        oBTN[0].innerText = "-";
-        oBTN[0].value = "-";
-        oBTN[0].addEventListener("click", killLine);
-
+        bouton = oTD[5].getElementsByTagName('button');
 
     }
+/*
+    if( test === 1)
+    {
+        bouton[0].addEventListener("click", ajouter);
+    }
+    else if(i === 0){
+        bouton[0].addEventListener("click", killLine);
+    }
+*/
+}
+
+function etatAdd(){
+    ligne1 = document.getElementById('lVoyageurs').rows[0];
+    ligne1.style.visibility = "visible";
+    ligne1.cells[5].children[0].addEventListener('click', ajouter) ;
+    oTR = document.getElementById('lVoyageurs').rows;
+
+
+    for (i = 1; i < oTR.length; i++) {
+
+
+        oTD = oTR[i].getElementsByTagName('td');
+
+        // console.log("longeur : " + longeurTr);
+
+        bouton = oTD[5].getElementsByTagName('button');
+  //      bouton[0].style.visibility = "visible";
+
+        //   oBTN[0] = event.target;
+        bouton[0].innerText = "+";
+        bouton[0].value = "+";
+        bouton[0].addEventListener("click", ajouter);
+    }
+/*
+    if (longeurTr > 1 && oTR) {
+        selectionDelete.style.visibivisibility = "hidden";
+    }
+    */
+}
+
+function etatDelete() {
+deleteP.disabled = true;
+addP.disabled = false;
+// val = ajouter();
+test = 0;
+longeurTd = document.getElementById('lVoyageurs').rows[0].cells.length;
+
+longeurTr = document.getElementById('lVoyageurs').rows.length;
+dernierTr = longeurTr - 1;
+dernierTd = longeurTd;
+selectionDelete = document.getElementById('lVoyageurs').rows[dernierTr].cells[5];
+oTR = document.getElementById('lVoyageurs').rows;
+for (i = 1; i < longeurTr; i++) {
+
+    if(i === 0){
+        ligne1.style.visibility = "visible"
+    }
+    oTD = oTR[i].getElementsByTagName('td');
+
+   // console.log("longeur : " + longeurTr);
+
+    bouton = oTD[5].getElementsByTagName('button');
+    bouton[0].style.visibility = "visible";
+
+ //   oBTN[0] = event.target;
+    bouton[0].innerText = "-";
+    bouton[0].value = "-";
+    bouton[0].addEventListener("click", test2);
+}
+    /*
+    if( test === 1)
+    {
+        bouton[0].addEventListener("click", ajouter);
+    }
+    else if(i === 0){
+        bouton[0].addEventListener("click", killLine);
+    }
+
+     */
+
+
+
+
+
 }
 
 function killLine(event) // Le paramètre event représente l'événement qui a causé l'appel à la fonction
@@ -71,18 +137,23 @@ function killLine(event) // Le paramètre event représente l'événement qui a 
     deleteP.disabled = true;
 
 
-    selectionDelete = document.getElementById('lVoyageurs').rows[this].cells[5].children[0];
+  // button = document.getElementById('lVoyageurs').rows[1].cells[5].children[0];
 
-    selectionDelete = event.target // La cible ('target') de l'événement est le bouton (un élément du DOM)
-    btn = selectionDelete.parentNode // td est la cellule dans laquelle le bouton se trouve
-    td = btn.parentNode // tr est la ligne ('row') dans laquelle la cellule se trouve
-    tr = td.parentNode
+    button = event.target // La cible ('target') de l'événement est le bouton (un élément du DOM)
+
+    td = button.parentNode // td est la cellule dans laquelle le bouton se trouve
+    tr = td.parentNode // tr est la ligne ('row') dans laquelle la cellule se trouve
+
     tbody = tr.parentNode // table est la table dans laquelle la ligne se trouve
+  //  sss = tbody.parentNode
     tbody.removeChild(tr) // On enlève la ligne de la table
+    return test
 }
 
 
 function ajouter() {
+
+    test = 1;
 
     addP.disabled = true;
     deleteP.disabled = false;
@@ -94,14 +165,15 @@ function ajouter() {
     selectionDelete = document.getElementById('lVoyageurs').rows[dernierTr].cells[dernierTd];
 
     if (longeurTr !== 1) {
-        selectionDelete.style.visibility = "hidden";
+       selectionDelete.style.visibivisibility = "hidden";
     }
 
 
     console.log(longeurTr + " espace    tdLentg" + dernierTd);
     newtr = document.createElement('tr')
 
-    for (i = 0; i < 5 + 1; i++) {
+    for (i = 1; i < 5 + 1; i++) {
+
         if (i === 3) {
             newtd = document.createElement('td');
             newSelect = document.createElement('select');
@@ -126,9 +198,11 @@ function ajouter() {
         if (i === 5) {
             newtd = document.createElement('td');
             newBouton = document.createElement('button');
-            newBouton.value = "+"
-            newBouton.innerText = "+"
-            newBouton.addEventListener("click", ajouter)
+            newBouton.value = "+";
+            newBouton.innerText = "+";
+
+            //    newBouton.addEventListener("click", test2);
+
                 //      console.log("bouton\n")
             newtd.appendChild(newBouton);
 
@@ -139,6 +213,23 @@ function ajouter() {
     }
     newtr.appendChild(newtd);
     lVoyageurs.appendChild(newtr);
+
+
+    oTR = document.getElementById('lVoyageurs').rows;
+    for (i = 1; i < oTR.length; i++) {
+        oTD = oTR[i].getElementsByTagName('td');
+
+        // console.log("longeur : " + longeurTr);
+
+        bouton = oTD[5].getElementsByTagName('button');
+
+        bouton[0].addEventListener("click", test2);
+        console.log("bouton : " + bouton[0].value);
+    }
+
+
+
+
 
 
     return document.getElementById('lVoyageurs')
