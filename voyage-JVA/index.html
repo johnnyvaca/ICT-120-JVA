@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transports</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+    <script src="bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
+
+
+</head>
+<body>
+
+
+<div class="text-center" class="imgTransport">
+    <img src="imageTransports.jpg" class="rounded imgTransport" alt="profil">
+</div>
+<div class=" menuPage ">
+    <ul class="nav justify-content-center mw-100 ">
+
+        <li class="nav-item">
+            <a class="nav-link active" href="" style=" color: #000"><b>Transports</b></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Participants</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Activités</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="#">Hébérgement</a>
+        </li>
+    </ul>
+</div>
+<br>
+<br>
+<br>
+
+<button class="btn btn-info " id="fini">fini</button>
+<button class="btn btn-info " id="edit">editer</button>
+
+<div id="cacher">
+    <div class="form-row" id="ajoutDestination">
+        <div class="col-md-2 mb-3">
+            <label for="validationDefault06">Lieu départ </label>
+            <input type="text" class="form-control" id="debutVoyage" placeholder="Lieu départ">
+        </div>
+        <div class="col-md-2 mb-3">
+            <label for="validationDefault07">Destination final</label>
+            <input type="text" class="form-control" id="DestinationFinal" placeholder="Destination final" required>
+        </div>
+        <div class="col-md-2 mb-3 ">
+            <button class=" btn btn-primary cmdAjouter " id="cmdAjouterDestination">Ajouter</button>
+        </div>
+        <div class="col-md-2 mb-2">
+            <select class="custom-select" id="slctVoyages">
+                <option selected>choisissez votre voyage</option>
+            </select>
+        </div>
+
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="form-row" id="ajoutTransports">
+        <div class="col-md-2 mb-3">
+            <label for="validationDefault09">Depart</label>
+            <input type="text" class="form-control" id="validationDefault06" placeholder="Depart" required>
+        </div>
+        <div class="col-md-2 mb-3">
+            <label for="validationDefault10">Arrivée</label>
+            <input type="text" class="form-control" id="validationDefault07" placeholder="Arrivée" required>
+        </div>
+
+        <div class="col-md-2 mb-3">
+            <label for="validationDefault11">Date</label>
+            <input type="date" class="form-control" id="validationDefault08" placeholder="Date" required>
+        </div>
+        <div class="col-md-2 mb-3">
+            <label for="validationDefault06">Heure départ</label>
+            <input type="time" class="form-control" id="validationDefault09" placeholder="Heure départ" required>
+        </div>
+        <div class="col-md-2 mb-3">
+            <label for="validationDefault07">Heure arrivé</label>
+            <input type="time" class="form-control" id="validationDefault10" placeholder="Heure arrivé" required>
+        </div>
+        <div class="col-md-1 mb-3">
+            <label for="validationDefault06">Numero Transport</label>
+            <input type="text" class="form-control" id="validationDefault11" placeholder="Numero Transport" required>
+        </div>
+        <div class="col-md-1 mb-3 ">
+            <button class=" btn btn-primary cmdAjouter" id="cmdAjouterTransport">Ajouter</button>
+        </div>
+    </div>
+
+
+    <form class="needs-validation " novalidate>
+        <div class="form-row" id="ajoutVoyageurs">
+            <div class="col-md-2 mb-3">
+                <label for="validationCustom01">Prénom</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Prénom" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="validationCustom02">nom de famille</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="nom de famille" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+
+            <div class="col-md-2 mb-3">
+                <label for="validationCustom03">Piéce d'identité</label>
+                <input type="text" class="form-control" id="validationCustom03" placeholder="type pièce d'identité"
+                       required>
+                <div class="invalid-feedback">
+                    Please provide a valid city.
+                </div>
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="validationCustom04">Numéro pièce d'identité</label>
+                <input type="text" class="form-control" id="validationCustom04" placeholder="Numéro pièce d'identité"
+                       required>
+                <div class="invalid-feedback">
+                    Please provide a valid state.
+                </div>
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="validationCustom05">remarques</label>
+                <input type="text" class="form-control" id="validationCustom05" placeholder="Remarques" required>
+                <div class="invalid-feedback">
+                    Please provide a valid zip.
+                </div>
+            </div>
+
+            <div class="col-md-2 mb-3">
+                <button class=" btn btn-primary cmdAjouter" id="cmdAjouter">Ajouter</button>
+            </div>
+        </div>
+    </form>
+
+
+    <br>
+    <br>
+
+
+<table class="table table-dark">
+    <thead>
+
+    <tr>
+
+        <th scope="col">Depart</th>
+        <th scope="col">Arrivé</th>
+        <th scope="col">Date</th>
+        <th scope="col">Heure Départ</th>
+        <th scope="col">Heure arrivé</th>
+        <th scope="col">Numero transport</th>
+
+
+    </tr>
+    </thead>
+    <tbody id="tbody1">
+
+    </tbody>
+</table>
+</div>
+</body>
+</html>
