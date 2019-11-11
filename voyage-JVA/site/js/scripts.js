@@ -1,4 +1,6 @@
-//
+//auteur : JOhnny Vaca
+// Date : 10.11.2019
+// Description : Gestion du transport voyage d'études
 
 document.addEventListener('DOMContentLoaded', init);
 
@@ -115,7 +117,6 @@ function fnSupprimerVoyageur(event)
 function fnAjouterDestination() {
 
     depart = document.getElementById('debutVoyage').value;
-    console.log(document.getElementById('debutVoyage').value);
     arrive = document.getElementById('DestinationFinal').value;
 
     // si les champs depart ou destination final ne sont pas vide...
