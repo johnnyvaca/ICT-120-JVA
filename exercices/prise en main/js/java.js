@@ -1,10 +1,33 @@
-div11 = document.getElementById("div1")
-div12 = document.getElementById("div2")
-div13 = document.getElementById("div3")
-div14 = document.getElementById("div4")
-div15 = document.getElementById("div5")
-div16 = document.getElementById("txtNames")
-div17 = document.getElementById("txtInitialss")
+document.addEventListener('DOMContentLoaded', init);
+function    init(){
+
+    div11 = document.getElementById("div1")
+    div12 = document.getElementById("div2")
+    div13 = document.getElementById("div3")
+    div14 = document.getElementById("div4")
+    div15 = document.getElementById("div5")
+    div16 = document.getElementById("txtNames")
+    div17 = document.getElementById("txtInitialss")
+
+
+    div11.addEventListener("click",div01);
+    div12.addEventListener("click",div02);
+    div13.addEventListener("mouseover",div03);
+    div13.addEventListener("mouseout",div04);
+    chbox1.addEventListener("click",bigywas);
+    chbox2.addEventListener("click",bigywas);
+    balle.addEventListener("click",detruire);
+
+
+    partez.addEventListener("click", partezs);
+    marque.addEventListener("click", marques);
+    pret.addEventListener("click", prets);
+
+    div16.addEventListener("keyup",initials);
+}
+
+
+
 
 
 
@@ -41,13 +64,7 @@ function bigywas(){
     }
 
 }
-div11.addEventListener("click",div01);
-div12.addEventListener("click",div02);
-div13.addEventListener("mouseover",div03);
-div13.addEventListener("mouseout",div04);
-chbox1.addEventListener("click",bigywas);
-chbox2.addEventListener("click",bigywas);
-balle.addEventListener("click",detruire);
+
 
 function detruire()
 {
@@ -67,12 +84,11 @@ function initials() {
     div17.value = (lettre1 + lettre2 + lettre3);
     acronime = div17.value;
     div17.value = div17.value.toUpperCase();
-    //  console.log(position3 + " =  " + lettre3+  "<br>");
 
 
 }
 
-div16.addEventListener("keyup",initials);
+
 function vide()
 {
     marque.disabled = false;
@@ -80,7 +96,7 @@ function vide()
     pret.style.visibility = "visible";
     pret.disabled = true;
     partez.style.visibility = "hidden";
-    images.setAttribute("src","empty.png");
+    images.setAttribute("src","images/empty.png");
 
 }
 
@@ -89,7 +105,7 @@ function marques() {
         pret.disabled = false;
         partez.style.visibility = "visible";
         partez.disabled = true;
-        images.setAttribute("src","marks.png");
+        images.setAttribute("src","images/marks.png");
 }
 function prets() {
 
@@ -99,7 +115,7 @@ function prets() {
         partez.style.visibility = "visible";
         partez.disabled = false;
         autre.
-    images.setAttribute("src","set.png");
+    images.setAttribute("src","images/set.png");
 
 
 }
@@ -108,22 +124,8 @@ function partezs() {
         marque.style.visibility = "hidden";
         pret.style.visibility = "hidden";
         partez.disabled = true;
-    images.setAttribute("src","go.png");
+    images.setAttribute("src","images/go.png");
         setTimeout(vide, 3000);
 
 }
 
-
-partez.addEventListener("click", partezs);
-marque.addEventListener("click", marques);
-pret.addEventListener("click", prets);
-
-//element.classList();
-/*
-Mesurer     txt.value.lenght
-
-Extraire                txtvame.value.substring(depart,combien);
-Rechercher              txtname.value.indexOf(i);
-Rechercher  A'lenver :  txtname.value.lastIndexOf(g);
-Concatener              consol.log("J'ai"+variable+"ans")
-Interpoler */
