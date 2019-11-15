@@ -1,0 +1,5 @@
+document.getElementById("myDIV").classList.add("mystyle");
+document.getElementById("myDIV").classList.remove("mystyle");
+
+
+element.className();
