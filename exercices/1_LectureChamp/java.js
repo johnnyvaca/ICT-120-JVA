@@ -9,15 +9,15 @@ function alerts(event) {
 gos.addEventListener("click", alerts);
 
 function a11() {
-    imagess.setAttribute("src", "go.png");
+    imagess1.setAttribute("src", "go.png");
 }
 
 function a22() {
-    imagess.setAttribute("src", "marks.png");
+    imagess1.setAttribute("src", "marks.png");
 }
 
 function a33() {
-    imagess.setAttribute("src", "set.png");
+    imagess1.setAttribute("src", "set.png");
 }
 
 
@@ -35,15 +35,15 @@ function myselect() {
 
     console.log(lettre);
     console.log(sO);
-    console.log('${lettre}');imagess.setAttribute("src", lettre);
+    console.log('${lettre}');imagess2.setAttribute("src", lettre);
 
 
 }
 select1.addEventListener("change", myselect);
 
 
-vMin = 1,
-    vMax = 10,
+vMin = 1;
+    vMax = 10;
     select = document.getElementById('sMin');
 for (i = vMin; i <= vMax; i++) {
     opt = document.createElement('option');
@@ -53,8 +53,8 @@ for (i = vMin; i <= vMax; i++) {
 }
 
 
-vMin2 = 11,
-    vMax2 = 99,
+vMin2 = 11;
+    vMax2 = 99;
     select = document.getElementById('sMax');
 for (i = vMin2; i <= vMax2; i++) {
     opt = document.createElement('option');
